@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font: 62.5%;
+}
+html, body, header, section{
+  height: 100vh;
+  font-family:'bitter';
+}
+
+header{
+  background-attachment:fixed;
+
+  min-width: 100vw;
+ 
+  background-image:  linear-gradient(to left bottom, rgba(205, 101,127,0.9), rgba(191, 216, 51,0.8)),url(https://images.unsplash.com/photo-1505685296765-3a2736de412f?dpr%3D1%26auto%3Dformat%26fit%3Dcrop%26w%3D376%26h%3D251%26q%3D60%26cs%3Dtinysrgb%26ixid%3DdW5zcGxhc2guY29tOzs7Ozs%3D);
+  background-size:cover;
+  background-position:center;
+ }
+
+header nav{
+  position:absolute;
+  display:flex;
+  justify-content: flex-end;
+  
+}
+
+
+ nav a{
+   padding:1rem;
+  text-decoration: none;
+  color: #34374C;
+font-size: 0.8rem;
+}
+
+#about nav a{
+  color:#CD657F;
+  
+}
+#kop{
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  align-items: center;
+}
+
+.kopstreepje{
+/*   background-color:#CD657F;
+  width:10rem;
+  height:0.5rem;
+  margin-left: 2rem; */
+}
+
+#kop{
+  
+}
+
+header #kop h1{
+  font-family:'bree serif';
+    color:#F6F6F6;
+  font-size:2.6rem;
+  padding:1rem;
+  text-align:center;
+  width: 25rem;
+}
+
+header #kop h2{
+  color:#34374C;
+  font-family: 'Damion', cursive;
+  font-size:2rem;
+  margin:1rem;
+}
+
+
+.subkop{
+  padding: 2rem 0 0 2rem;
+  font-size:2rem;}
+
+#about{
+  background-attachment:fixed;
+  
+}
+
+#about .tekstvlak{
+  display:flex;
+  padding-left:1rem;
+  padding-righr:
+  border-right: 0.4rem solid #BFD833;
+  
+  
+}
+
+#about .tekstvlak p{
+  padding:1rem;
+  width:45%;
+  text-align: justify;
+}
+
+section #projecten{
+  height: 100vh;
+  background-color:#BFD833;
+}
+
+/* #verticale-streep{
+  height: 100;
+  width: 0.2rem;
+  background-color: #CD657F;
+} */
