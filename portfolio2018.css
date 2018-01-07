@@ -6,107 +6,134 @@
 html {
     font: 62.5%;
 }
-html, body, header, section{
-  height: 100vh;
-  font-family:'bitter';
+html,
+body,
+header,
+section {
+    height: 100vh;
+    font-family: 'bitter';
+}
+/* ---------------------------   header ------------------------------              */
+
+header {
+    background-attachment: fixed;
+    min-width: 100vw;
+    background-image: linear-gradient(to right bottom, rgba(192, 128, 129, 1), rgba(192, 128, 129, 0.8)), url(https://images.unsplash.com/photo-1505685296765-3a2736de412f?dpr%3D1%26auto%3Dformat%26fit%3Dcrop%26w%3D376%26h%3D251%26q%3D60%26cs%3Dtinysrgb%26ixid%3DdW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-size: cover;
+    background-position: center;
+}
+header nav {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+}
+nav a {
+    padding: 1rem;
+    text-decoration: none;
+    color: #34374C;
+    font-size: 0.8rem;
 }
 
-header{
-  background-attachment:fixed;
 
-  min-width: 100vw;
- 
-  background-image:  linear-gradient(to left bottom, rgba(205, 101,127,0.9), rgba(191, 216, 51,0.8)),url(https://images.unsplash.com/photo-1505685296765-3a2736de412f?dpr%3D1%26auto%3Dformat%26fit%3Dcrop%26w%3D376%26h%3D251%26q%3D60%26cs%3Dtinysrgb%26ixid%3DdW5zcGxhc2guY29tOzs7Ozs%3D);
-  background-size:cover;
-  background-position:center;
- }
 
-header nav{
-  position:absolute;
-  display:flex;
-  justify-content: flex-end;
-  
+#kop {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-
-
- nav a{
-   padding:1rem;
-  text-decoration: none;
-  color: #34374C;
-font-size: 0.8rem;
-}
-
-#about nav a{
-  color:#CD657F;
-  
-}
-#kop{
-  height:100vh;
-  display: flex;
-  justify-content: center;
-  flex-direction:column;
-  align-items: center;
-}
-
-.kopstreepje{
-/*   background-color:#CD657F;
+.kopstreepje {
+    /*   background-color:#CD657F;
   width:10rem;
   height:0.5rem;
   margin-left: 2rem; */
 }
-
-#kop{
-  
+ header #kop h1 {
+    font-family: 'bree serif';
+    color: #F6F6F6;
+    font-size: 2.6rem;
+    padding: 1rem;
+    text-align: center;
+    width: 25rem;
+}
+header #kop h2 {
+    color: #34374C;
+    font-family: 'Damion', cursive;
+    font-size: 2rem;
+    margin: 1rem;
+}
+.subkop {
+    padding: 2rem 0 0 2rem;
+    font-size: 2rem;
+    
 }
 
-header #kop h1{
-  font-family:'bree serif';
-    color:#F6F6F6;
-  font-size:2.6rem;
-  padding:1rem;
-  text-align:center;
-  width: 25rem;
-}
 
-header #kop h2{
-  color:#34374C;
-  font-family: 'Damion', cursive;
-  font-size:2rem;
-  margin:1rem;
-}
-
-
-.subkop{
-  padding: 2rem 0 0 2rem;
-  font-size:2rem;}
+/* ---------------------------   about    ------------------------------              */
 
 #about{
-  background-attachment:fixed;
-  
+    background-color: #F8F1D0;
+    display: flex;
+   height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
-#about .tekstvlak{
-  display:flex;
-  padding-left:1rem;
-  padding-righr:
-  border-right: 0.4rem solid #BFD833;
-  
-  
+
+#about .aboutkop{
+   width: 80vw; 
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2rem;
+    
+    
+
+    
+   
+}
+#about  p {
+    margin: 2rem;
+    width: 80vw;
+    text-align: justify;
+    
 }
 
-#about .tekstvlak p{
-  padding:1rem;
-  width:45%;
-  text-align: justify;
+#about #socialmedia{
+    display: flex;
+    
 }
 
-section #projecten{
-  height: 100vh;
-  background-color:#BFD833;
-}
+/* ---------------------------   projecten           ------------------------------              */
 
+section #projecten {
+    height: 100vh;
+   
+}
 /* #verticale-streep{
   height: 100;
   width: 0.2rem;
   background-color: #CD657F;
 } */
+
+@media screen and (max-width: 40rem) {
+    #about {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+        min-width: 100vw;
+        margin-top: 0.5rem;
+    }
+    #about p {
+        width: 80vw;
+        margin: 3rem 1rem 1rem 1rem;
+    
+    }
+    
+    #about .aboutkop{
+        font-size: 1.5rem
+    }
+}
