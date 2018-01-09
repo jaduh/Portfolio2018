@@ -1,28 +1,30 @@
-function scrollIt(element) {  
-  window.scrollTo({
-    'behavior': 'smooth',
-    'left': 0,
-    'top': element.offsetTop
-  });
+//--------------------Smooth scrolling
+
+
+function anchorLinkHandler(e) {
+    var distanceToTop = function (el){
+      return Math.floor(el.getBoundingClientRect().top);
+
+    };
+    e.preventDefault();
+    const targetID = this.getAttribute("href");
+    const targetAnchor = document.querySelector(targetID);
+    if (!targetAnchor) return;
+    const originalTop = distanceToTop(targetAnchor);
+
+    window.scrollBy({ top: originalTop, left: 0, behavior: "smooth" });
+
+    const checkIfDone = setInterval(function() {
+        const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
+        if (distanceToTop(targetAnchor) === 0 || atBottom) {
+            targetAnchor.tabIndex = "-1";
+            targetAnchor.focus();
+            window.history.pushState("", "", targetID);
+            clearInterval(checkIfDone);
+        }
+    }, 100);
 }
 
+const linksToAnchors = document.querySelectorAll('a[href^="#"]');
 
-const btns = document.querySelectorAll('.scroll');
-const sections = document.querySelectorAll('.scrollSection');
-
-btns[0].addEventListener('click', () => {
-  scrollIt(sections[0]);
-});
-
-btns[1].addEventListener('click', () => {
-  scrollIt(sections[1]);
-});
-
-btns[2].addEventListener('click', () => {
-  scrollIt(sections[2]);
-});
-
-btns[3].addEventListener('click', () => {
-  scrollIt(sections[3]);
-});
-
+linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));

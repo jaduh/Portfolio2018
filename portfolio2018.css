@@ -10,7 +10,7 @@ html,
 body,
 header,
 section {
-    height: 100vh;
+    max-height: 100vh;
     font-family: 'bitter';
 }
 /* ---------------------------   header ------------------------------              */
@@ -22,16 +22,28 @@ header {
     background-size: cover;
     background-position: center;
 }
-header nav {
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
+#header {
+    
+ display: flex;  
+    flex-direction: column;
+ 
+   
+}
+
+header nav{
+ 
+    align-self: flex-end;
+    position: relative;
+    bottom: 2rem;
+    right: 3rem;
 }
 nav a {
-    padding: 1rem;
+    padding: 0.3rem;
     text-decoration: none;
     color: #34374C;
+ 
     font-size: 0.8rem;
+    background-color: rgba(246, 246, 246, .8)
 }
 
 
@@ -43,12 +55,7 @@ nav a {
     flex-direction: column;
     align-items: center;
 }
-.kopstreepje {
-    /*   background-color:#CD657F;
-  width:10rem;
-  height:0.5rem;
-  margin-left: 2rem; */
-}
+
  header #kop h1 {
     font-family: 'bree serif';
     color: #F6F6F6;
@@ -67,6 +74,10 @@ header #kop h2 {
     padding: 2rem 0 0 2rem;
     font-size: 2rem;
     
+}
+
+header #button{
+    margin-top: 16rem;
 }
 
 
@@ -107,17 +118,57 @@ header #kop h2 {
     
 }
 
+
+
+#about nav{
+     align-self: flex-end;
+    position: relative;
+    right: 3rem;
+    top:4.5rem;
+
+    
+}
 /* ---------------------------   projecten           ------------------------------              */
 
 section #projecten {
     height: 100vh;
+    
+    
    
 }
-/* #verticale-streep{
-  height: 100;
-  width: 0.2rem;
-  background-color: #CD657F;
-} */
+
+.container-projecten{
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+  
+
+    
+}
+.container-projecten #project1, #project2,#project3{
+    height: 10rem;
+    
+    margin-top: 1rem;
+    text-align: center;
+    padding: 3.5rem;
+        
+}
+
+.container-projecten #project1{
+    background: linear-gradient(to left bottom,#FEFAEC, #A9EEE6) ;
+}
+
+.container-projecten #project2{
+     background: linear-gradient(#F38181,#FEFAEC) ;
+    
+}
+
+.container-projecten #project3{
+    background: linear-gradient(#A9EEE6,#F38181);
+}
+
+
 
 @media screen and (max-width: 40rem) {
     #about {
@@ -135,5 +186,8 @@ section #projecten {
     
     #about .aboutkop{
         font-size: 1.5rem
+    }
+    nav {
+        align-self: center;
     }
 }
