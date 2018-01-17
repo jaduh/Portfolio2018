@@ -1,0 +1,18 @@
+$color-one: #ef7f81;
+$color-two:#badfda;
+$color-three:#fefaee;
+$color-text-one:#695569;
+$color-text-two:#fff;
+    
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+ background-color: $color-one; 
+    height: 100vh;
+    
+    
+}

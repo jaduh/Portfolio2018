@@ -1,89 +1,77 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Jade Yorks - Lost jouw levensproblemen op met code</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Arvo|Bitter|Bree+Serif|Damion" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="portfolio2018.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Jade Yorks">
-    <meta name="description" content="Deze splinternieuwe front end dev verruilde de journalistieke pen voor de teksteditor waarmee ze problemen eigenhandig oplost met HTML CSS en Javasctipt.">
+    <meta name="viewport" content="width= device-width, initial-scale =1">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Bree+Serif|Crete+Round|Martel" rel="stylesheet">
+    <link rel="stylesheet" href="css/portfolio.css">
 
+    <title>Portfolio Jade Yorks</title>
 </head>
 
 <body>
-    <header id='header'>
+    <header class="header">
 
-        <div id="kop">
-
-            <h1>
-      Lost problemen op met code
-    </h1>
-            <h2>Jade Yorks</h2>
-        </div>
         <nav>
-            <a href="#about">Over jade</a>
-            <a href="#projecten">Projecten</a>
-
+            <a href="">Home</a>
+            <a href="#about-section">Over mij</a>
+            <a href="">Projecten</a>
         </nav>
+        <div class="header-textbox">
 
-
-
-
+            <h1>Lost problemen <span class="subkop">op met code</span></h1>
+            <h3>Jade Yorks</h3>
+        </div>
 
     </header>
 
+    <section id="about-section">
+        <nav>
+            <a href="">Home</a>
+            <a href="">Over mij</a>
+            <a href="">Projecten</a>
+        </nav>
+        <div class="about-textbox">
+            <h2>Ik ben Jade, <span class="subkop">Front End Developer  </span> <span class="subkop">in ontwikkeling    </span> 
+       </h2>
+            <div class="about-tekstvlak">
+                <p>
+                    Vooral ervaring met de kunst van het geschreven woord, maar sinds enige tijd verslaafd, verliefd en stiekem een beetje geobsedeerd door het schrijven van code. Ik wilde een eigen blog, maar kon de perfecte WordPress template niet vinden. Dan maar zelf doen, dacht ik.</p>
+                <p>En zo leerde ik html en css kennen via codecademy. Daarna volgde freecodecamp, meerdere cursussen op Udemy, het vak JavaScript cliëntside scripting aan Encora en het fantastische 10 daagde event Days of Code in Rotterdam. Het resultaat? Ik ondernam de eerste stapjes naar het maken van webapplicaties en heb sindsdien een niet te stillen honger naar meer.
 
-
-    <section>
-
-        <div id="about">
-
-            <h2 class='aboutkop'>Ik ben Jade. <br>Een razend enthousiaste <br>Front end Developer<br> in ontwikkeling </h2>
-
-
-
-
-
-            <p>
-                Thundercats woke polaroid readymade lomo hoodie ennui kinfolk bicycle rights fingerstache. Put a bird on it man bun knausgaard meditation, salvia migas tumblr swag tilde woke mlkshk thundercats pinterest. Stumptown keffiyeh salvia XOXO narwhal cloud bread lomo. Letterpress scenester 8-bit squid. VHS gluten-free kogi locavore, pickled pork belly meggings tote bag vaporware normcore put a bird on it tousled four loko food truck. Tbh pinterest jean shorts meditation cronut vexillologist neutra crucifix.
-            </p>
-            <div id="socialmedia">
-                <img src="img/003-github-logo.png" alt="github jade">
-                <img src="img/004-instagram-logo.png">
-                <img src="img/005-twitter-logo-button.png" alt="">
-                <img src="img/006-facebook-logo-button.png" alt="">
+                </p>
             </div>
-            <nav>
-                <a href="#header">Home</a>
-                <a href="#projecten">Projecten</a>
-
-            </nav>
-            
         </div>
-
+        <div class="social-mediabox">
+            <img src="img/004-instagram-logo.png" alt="">
+            <img src="img/003-github-logo.png" alt="">
+            <img src="img/005-twitter-logo-button.png" alt="">
+            <img src="img/006-facebook-logo-button.png" alt="">
+        </div>
+        <p id="email">jadeyorks@gmail.com</p>
     </section>
 
-    <section>
-        <div id="projecten">
-            <h2 class='subkop'>Projecten</h2>
-            
-            <div class="container-projecten">
-            <div id="project1">Project 1</div>
-            <div id="project2"> Project 2</div>
-            <div id="project3">Project 3</div>
-            
+    <section id="projects-section">
+        <nav>
+            <a href="#about-section">Home</a>
+            <a href="">Over mij</a>
+            <a href="">Projecten</a>
+        </nav>
+        <div id="projects">
+            <div class="project" id="project-1">
+                <h3>The Feel Good Page</h3>
+            </div>
+            <div class="project" id="project-2">
+                <h3>Jouw Weerbericht</h3>
+            </div>
+            <div class="project" id="project-3">
+                <h3>Know it all</h3>
             </div>
 
         </div>
     </section>
-
-    
-
-    <script src="portfolio.js"></script>
 </body>
 
 </html>

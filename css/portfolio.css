@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+max-width: 100vw;}
+
+html{62.5%;}
+
+body{
+    font-family: 'bree serif'
+}
+
+.header {
+  
+  background-image:  linear-gradient( rgba(237, 113, 128,.8), rgba(255, 200, 200, .9)), url(../img/IMG_0677.JPG); 
+    background-size: cover;
+    background-position:  center;
+height: 100vh;
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
+
+.header .header-textbox{
+ width: 90%;
+ 
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    color:#fff;
+    text-align: center;
+    
+}
+.header .header-textbox h1{
+    font-size: 2.3rem;
+    
+    font-family: 'Bitter'
+  
+    
+}
+
+
+.header .header-textbox h3{
+    color:#695569;
+    padding: 0.2rem;
+  
+    
+}
+
+
+.subkop{
+    display: block;
+    
+    
+}
+
+
+
+/*about section*/
+nav{
+     
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    
+}
+ 
+nav a{
+       color:#fff;
+    font-family: 'Martel';
+     text-decoration: none;
+    padding: .5rem;
+    
+    }
+
+#about-section{
+    height: 100vh;
+    background-color: #fefbee;
+ text-align: center;
+   
+    
+}
+
+
+#about-section .about-textbox{
+     display: flex;
+    flex-direction: column;
+   align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+#about-section .about-tekstvlak{
+     padding: 2rem 2rem 1rem;
+}
+#about-section p{
+    
+text-align: justify;
+    padding:0.5rem 0;
+   
+    
+}
+
+.social-mediabox{
+    margin-top:-1rem;
+}
+
+#about-section nav a{
+    color:#695569;
+  
+}
+#about-section #email{
+    text-align: center;
+    padding: 1rem;
+    color: #ed7180;
+    
+    
+    
+}
+
+#projects-section{
+    height: 100vh;
+    color:#fff;
+    
+    
+}
+
+#projects-section nav a{
+    color: #695569;
+}
+
+#projects{
+    margin: 3rem 0;
+    text-shadow: .09rem .09rem #777;
+}
+#projects-section .project{
+    height: 28vh;
+    width: 98vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-1{
+    background-color: #ed7180;
+    
+}
+#project-2{
+
+background-color:
+    #badfda;
+}
+
+#project-3{
+    background-color: #fefbee;
+}
