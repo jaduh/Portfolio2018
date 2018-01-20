@@ -12,12 +12,10 @@ body{
 
 .header {
   
-  background-image:  linear-gradient( rgba(237, 113, 128,.8), rgba(255, 200, 200, .9)), url(../img/IMG_0677.JPG); 
+  background-image:  linear-gradient( rgba(237, 113, 128,.8), rgba(255, 200, 200, .9)), url(../img/jade_zwartwit.jpg); 
     background-size: cover;
     background-position:  center;
 height: 100vh;
-    
-    
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -32,7 +30,7 @@ height: 100vh;
     left: 50%;
     transform: translate(-50%, -50%);
     
-    color:#fff;
+    color: rgba(259,259,259,.9);
     text-align: center;
     
 }
@@ -140,7 +138,7 @@ text-align: justify;
 }
 #projects-section .project{
     height: 28vh;
-    width: 98vw;
+    width: 100vw;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -159,4 +157,22 @@ background-color:
 
 #project-3{
     background-color: #fefbee;
+}
+
+@media (min-width: 800px){
+    
+    .about-textbox h2{
+        font-size: 2rem;
+    }
+    
+    .about-tekstvlak{
+        display: flex;
+        flex-direction: column;
+        margin:2rem;
+    }
+    
+    .about-tekstvlak p{
+    
+        font-size: 1.4rem;
+    }
 }
