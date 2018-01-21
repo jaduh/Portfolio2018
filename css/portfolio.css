@@ -10,6 +10,21 @@ body{
     font-family: 'bree serif'
 }
 
+nav{
+     
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    
+}
+
+nav a{
+       color:#fff;
+    font-family: 'Martel';
+     text-decoration: none;
+    padding: .5rem;
+    
+    }
 .header {
   
   background-image:  linear-gradient( rgba(237, 113, 128,.8), rgba(255, 200, 200, .9)), url(../img/jade_zwartwit.jpg); 
@@ -60,21 +75,9 @@ height: 100vh;
 
 
 /*about section*/
-nav{
-     
-    display: flex;
-    justify-content: center;
-    padding: .5rem;
-    
-}
+
  
-nav a{
-       color:#fff;
-    font-family: 'Martel';
-     text-decoration: none;
-    padding: .5rem;
-    
-    }
+
 
 #about-section{
     height: 100vh;
@@ -85,27 +88,44 @@ nav a{
 }
 
 
+
 #about-section .about-textbox{
      display: flex;
     flex-direction: column;
    align-items: center;
     justify-content: center;
     height: 80vh;
-}
-
-#about-section .about-tekstvlak{
      padding: 2rem 2rem 1rem;
 }
-#about-section p{
+
+
+#about-section .about-textbox .paragraaf{
     
 text-align: justify;
     padding:0.5rem 0;
-   
+    margin: 2rem 3rem;
+}
+
+#about-section .about-textbox #p2{
+    display: none;
+}
+
+#about-section #meerknop #meer{
+    color: #ed7180;
+    font-size: 0.8rem; 
+        
+}
+
+#about-section #meerknop{
+    align-self: flex-end;
+    margin-right: 3rem;
     
 }
 
+
+
 .social-mediabox{
-    margin-top:-1rem;
+    margin-top:-4rem;
 }
 
 #about-section nav a{
@@ -163,16 +183,29 @@ background-color:
     
     .about-textbox h2{
         font-size: 2rem;
+        
     }
     
-    .about-tekstvlak{
+    .about-textbox{
         display: flex;
         flex-direction: column;
-        margin:2rem;
+        margin: 3rem 3rem 0rem 3rem;
+        
     }
     
-    .about-tekstvlak p{
+    .about-textbox p{
     
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        margin: 0rem 3rem;
+        
     }
+    
+    #about-section .about-textbox #p2{
+    display: block;
+}
+    #about-section #meer{
+        display: none;
+    }
+    
+    
 }
